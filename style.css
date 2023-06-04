@@ -1,0 +1,86 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('images/wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+#container{
+    width: 800px;
+    height: 600px;
+    background-color: #1110109d;
+    border-radius: 5px;
+    margin: 100px auto;
+    padding: 10px;
+    overflow: auto;
+}
+
+
+#addBox{
+    display: flex;
+    justify-content: space-around;
+}
+
+#todoListInput{
+    width: 85%;
+    height: 40px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+
+#addButton{
+    display: inline-block;
+    width: 10%;
+    height: 40px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+#list .item{
+    height: 50px;
+    border: 2px solid #fff;
+    margin: 10px auto;
+    line-height: 45px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#list .item .name{
+    width: 85%;
+}
+
+#list .item .done{
+    width: 5%;
+    height: 40px;
+    display: inline-block;
+    background: #fff url('icons/done.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #eee;
+    cursor: pointer;
+}
+#list .item .cancel{
+    width: 5%;
+    height: 40px;
+    display: inline-block;
+    background: #fff url('icons/cancel.png');
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #eee;
+    cursor: pointer;
+}
